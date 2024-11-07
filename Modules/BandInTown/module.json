@@ -1,0 +1,11 @@
+{
+    "name": "BandInTown",
+    "alias": "bandintown",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\BandInTown\\App\\Providers\\BandInTownServiceProvider"
+    ],
+    "files": []
+}
