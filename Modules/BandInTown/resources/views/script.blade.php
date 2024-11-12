@@ -14,9 +14,11 @@
         artist_name: mainScript.getAttribute('data-artist_name') ?? null,
     }
     {{-- if (window.artistInfo.artist_id && !window.artistInfo.artist_name) { --}}
-    if (!window.artistInfo.artist_name) {
-        return;
-    }
+    window.enable_band_in_town = mainScript.getAttribute('data-enable-band-in-town')??"";
+      if (window.enable_band_in_town!='1') {
+            return;
+        }
+        
     if (!document.querySelector('#bandintown_css')) {
         document.head.insertAdjacentHTML('beforeend', `<style id="bandintown_css">
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
